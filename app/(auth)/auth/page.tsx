@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, Loader2 } from "lucide-react";
@@ -7,9 +6,7 @@ import { ChevronLeft, Loader2 } from "lucide-react";
 export default function AuthPage() {
   const [isSignUp, setIsSignUp] = useState(true);
 
-  const [isLoading, setIsLoading] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState<string | null>("Not valid");
 
   // Toggles between signup and login forms.
   const toggleForm = () => {
